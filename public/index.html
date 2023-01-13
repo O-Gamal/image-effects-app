@@ -104,7 +104,7 @@
     </div>
     <main class="flex items-center justify-center h-screen relative z-100">
       <section
-        class="bg-white bg-opacity-95 border shadow-lg p-8 text-center max-w-xl rounded-lg"
+        class="bg-white bg-opacity-95 border shadow-lg p-8 text-center max-w-2xl rounded-lg"
       >
         <h1 class="text-5xl mb-8">Image Effects</h1>
         <p class="mb-4 px-10">
@@ -118,8 +118,10 @@
           <input type="file" id="upload" accept=".png" class="hidden" />
           Upload PNG Image
         </label>
-        <!-- Image -->
-        <img id="new-img" class="w-auto mx-auto" />
+        <div id="imgs-container" class="w-full">
+          <!-- <img id="original-img" class="object-contain" /> -->
+          <img id="new-img" class="object-contain" />
+        </div>
       </section>
     </main>
   </body>
